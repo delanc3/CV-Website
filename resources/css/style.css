@@ -1,0 +1,153 @@
+/*--------------------*/
+/*----BASIC SETUP-----*/
+/*--------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: AkiraExpanded;
+  src: url(./akira.otf);
+}
+
+html {
+  background-color: #fff;
+  color: #2F3434;
+  height: 100%;
+  font-family: "AkiraExpanded", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  display:flex;
+  background-color: #090C13;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/shape.png);
+  background-size: 400px;
+  opacity: 0.009;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*--------------------*/
+/*-RE-USABLE ELEMENTS-*/
+/*--------------------*/
+
+.row {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* -------HEADINGS------- */
+
+h1,
+h2,
+h3 {
+  display: flex;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  margin: 0;
+  color: #2F3434;
+  word-spacing: 4px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h4 {
+  display: flex;
+  font-size: 0.6vw;
+}
+
+/* -------HOME------- */
+
+#container {
+  display:flex;
+  width: 50vw;
+  height: calc(50vw / 2) ;
+  background-color: #F7F7FF;
+}
+
+#border {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image:url(./img/boxbackground.svg);
+  background-size: cover;
+  background-position-y: top;
+  clip: rect(100% 100%);
+  border: #2F3434 calc(1.2vw) solid;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  font-size: 1.2vw;
+  overflow: hidden;
+}
+
+#name {
+  display: flex;
+}
+
+.red {
+  color: #FF715B;
+}
+
+#scrolldown {
+  position: absolute;
+  bottom: calc(28vh);
+  right: calc(50vw);
+}
